@@ -7,7 +7,13 @@ if game_size == '3':
     hole3 = input("How many putts for hole 3? (par is 3) ")
     par3 = 9
     total_score = int(hole1) + int(hole2) + int(hole3) - int(par3)
-    print(f"Good game, {name}! Your total par was {total_score}")
+    total_score = total_score
+    if total_score == 0:
+        print(f"Good game, {name}! Your total par was {total_score}")
+    elif total_score >= 1:
+        print(f"Nice try, {name}! Your total par was +{total_score}")
+    elif total_score <= -1:
+        print(f"Great job, {name}! Your total par was {total_score}")
 elif game_size == '6':
     hole1 = input("How many putts for hole 1? (par is 3) ")
     hole2 = input("How many putts for hole 2? (par is 3) ")
@@ -15,8 +21,14 @@ elif game_size == '6':
     hole4 = input("How many putts for hole 4? (par is 3) ")
     hole5 = input("How many putts for hole 5? (par is 3) ")
     hole6 = input("How many putts for hole 6? (par is 3) ")
-    par3 = 18
-    total_score = int(hole1) + int(hole2) + int(hole3) - int(par3)
-    print(f"Good game, {name}! Your total par was {total_score}")
+    par6 = 18
+    total_score = int(hole1) + int(hole2) + int(hole3) + int(hole4) + int(hole5) + int(hole6)- int(par6)
+    total_score = total_score
+    if total_score == 0:
+        print(f"Good game, {name}! Your total par was {total_score}")
+    elif total_score >= 1:
+        print(f"Nice try, {name}! Your total par was +{total_score}")
+    elif total_score <= -1:
+        print(f"Great job, {name}! Your total par was {total_score}")
 else:
     print(f"Sorry {game_size} was not an option.")
