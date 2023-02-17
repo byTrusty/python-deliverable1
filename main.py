@@ -22,7 +22,7 @@ elif game_size == '6':
     hole5 = input("How many putts for hole 5? (par is 3) ")
     hole6 = input("How many putts for hole 6? (par is 3) ")
     par6 = 18
-    total_score = int(hole1) + int(hole2) + int(hole3) + int(hole4) + int(hole5) + int(hole6)- int(par6)
+    total_score = int(hole1) + int(hole2) + int(hole3) + int(hole4) + int(hole5) + int(hole6) - int(par6)
     total_score = total_score
     if total_score == 0:
         print(f"Good game, {name}! Your total par was {total_score}")
