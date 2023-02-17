@@ -1,4 +1,5 @@
 name = input("Welcome to GC Mini Golf! What is your name? ")
+value = '0'
 game_size = input("Hi " + name + "! Would you like to play 3 or 6 holes today? ")
 if game_size == '3':
     hole1 = input("How many putts for hole 1? (par is 3) ")
